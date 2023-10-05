@@ -1,0 +1,21 @@
+[package]
+name = "gamesense"
+version = "0.1.2"
+authors = ["ptrstr <ptrstr@protonmail.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ptrstr/gamesense/"
+homepage = "https://github.com/ptrstr/gamesense/"
+readme = "README.md"
+documentation = "https://docs.rs/gamesense"
+description = "SteelSeries GameSense™ client written in Rust"
+keywords = ["gamedev", "steelseries", "gamesense"]
+categories = ["api-bindings", "game-engines"]
+
+
+[dependencies]
+anyhow = "1.0.40"
+reqwest = {version = "0.11.2", features = ["blocking", "json"]}
+serde = {version = "1.0.125", features = ["derive"]}
+serde_json = "1.0.64"
+serde_repr = "0.1.6"
